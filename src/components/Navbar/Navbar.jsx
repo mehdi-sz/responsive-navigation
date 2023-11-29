@@ -1,10 +1,10 @@
-import React from 'react'
-
+import React from 'react';
+import { images } from '../../constants';
 const Navbar = () => {
   return (
     <nav className='app__navbar'>
         <div className="app__navbar-logo">
-            <img src="#" alt="logo" />
+            <img src={images.logo} alt="logo" />
         </div>
         <ul className="app__navbar-links">
             {['accueil', 'a propos','services','blog','contact'].map((item) => (
@@ -14,7 +14,7 @@ const Navbar = () => {
                 </li>
             ))}
         </ul>
-        
+
     </nav>
   )
 }
